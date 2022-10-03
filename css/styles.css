@@ -112,10 +112,21 @@ a {
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
          }
+        .header-icon {
+            margin-right: 10px;
+            color: currentColor;
+        }
          .header-link:focus,
          .header-link:hover {
             color: var(--second-accent-color);
+        
+         }
+         .header-icon:hover,
+         .header-icon:focus {
+            fill: var(--accent-text-color);
          }
     
  .list .link.current {
@@ -150,6 +161,10 @@ a {
             text-align: center;
             padding-top: 200px;
             padding-bottom: 200px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         .title {
             color: var(--primary-text-color);
@@ -222,6 +237,23 @@ background-color: var(--accent-background-color);
         }
         .about-list li {
             flex-basis: calc((100% - 3 * 30px) / 4);
+        }
+        .icon-container {
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 120px;
+            background-color: var(--section-background-color);
+            display: flex;
+            margin-bottom: 30px;
+            border-radius: 4px;
+
+        }
+        .about-svg {
+            /* border: 101px 25px; */
+            /* background-size: 270ox; */
+                /* background-size: 70px; */
+
         }
         .content .list {
             display: flex;
@@ -296,7 +328,19 @@ background-color: var(--accent-background-color);
         line-height: 1.18;
         background-color: var(--ptimary-backgrond-color);
 }
-.footer {
+
+.soc-icons-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.slider-list-icon {
+    display: flex;
+    }
+footer {
     background-color: var(--second-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
