@@ -249,12 +249,6 @@ background-color: var(--accent-background-color);
             border-radius: 4px;
 
         }
-        .about-svg {
-            /* border: 101px 25px; */
-            /* background-size: 270ox; */
-                /* background-size: 70px; */
-
-        }
         .content .list {
             display: flex;
             gap: 30px;
@@ -339,6 +333,26 @@ background-color: var(--accent-background-color);
 }
 .slider-list-icon {
     display: flex;
+    }
+
+    .customers {
+        background-color: var(--ptimary-backgrond-color);
+    }
+    .customers-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 94px;
+        margin-bottom: 50px;
+
+    }
+    .customers-list {
+        display: flex;
     }
 footer {
     background-color: var(--second-background-color);
