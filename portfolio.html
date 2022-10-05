@@ -13,22 +13,28 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container main-nav">
-            <nav class="site-nav">
-                <a class="link-logo" href=""><span class="logo">Web</span><span class="logo-title">Studio</span></a>
-                <ul class="list site-nav-list">
-                    <li class="item"><a class="link" href="./index.html">Студія</a></li>
-                    <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="item"><a class="link" href="">Контакти</a></li>
-                </ul>
-            </nav>
-            <ul class="nav-list list">
-                <li><a class="header-link" href="mailto=info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="header-link" href="tel=+380961111111">+38 096 111 11 11</a></li>
+<header class="header">
+    <div class="container main-nav">
+        <nav class="site-nav">
+            <a class="link-logo" href=""><span class="logo">Web</span><span class="logo-title">Studio</span></a>
+            <ul class="list site-nav-list">
+                <li class="item"><a class="link" href="./index.html">Студія</a></li>
+                <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="item"><a class="link" href="">Контакти</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="nav-list list">
+            <li><a class="header-link" href="mailto=info@devstudio.com">
+                    <svg class="header-icon" width="16px" height="12px">
+                        <use class="nav-icon" href="./images/symbol-defs (1).svg#iconenvelope-svg"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li><a class="header-link" href="tel=+380961111111">
+                    <svg class="header-icon" width="16px" height="12px">
+                        <use class="nav-icon" href="./images/symbol-defs (1).svg#iconVector-svg"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+    </div>
+</header>
     <main>
         <section class="cart">
            <div class="container">
@@ -120,19 +126,55 @@
         </section>
     </main>
 <footer class="footer">
-    <div class="container">
-        <a class="link-logo footer-link" href="./index.html"><span class="logo">Web</span><span
-                class="footer-title">Studio</span></a>
-        <address>
-            <ul class="list footer-list">
-                <li class="item">
-                    <a class="footer-adress" href="https://goo.gl/maps/4LqHr1r6RmhCcxyH7" target="_blank"
-                        rel="noopener nofollow noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+    <div class="container footer-container">
+        <div class="primary-footer">
+            <a class="link-logo footer-link" href="./index.html"><span class="logo">Web</span><span
+                    class="footer-title">Studio</span></a>
+            <address>
+                <ul class="list footer-list">
+                    <li class="item">
+                        <a class="footer-adress" href="https://goo.gl/maps/4LqHr1r6RmhCcxyH7" target="_blank"
+                            rel="noopener nofollow noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li class="item"><a class="footer-contacts" href="mailto=info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a class="footer-contacts" href="tel=+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="container-icons">
+            <h2 class="footer-title-icons">приєднуйтесь</h2>
+            <ul class="list footer-list-icons">
+                <li>
+                    <a class="soc-ocons-footer" href="#">
+                        <svg class="soc-icons-image" width="20" height="20">
+                            <use class="footer-icon" href="./images/symbol-defs (1).svg#iconinstagram-svg"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="item"><a class="footer-contacts" href="mailto=info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="footer-contacts" href="tel=+380961111111">+38 096 111 11 11</a></li>
+                <li>
+                    <a class="soc-ocons-footer" href="#">
+                        <svg width="20" height="20">
+                            <use class="footer-icon" href="./images/symbol-defs (1).svg#icontwitter-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="soc-ocons-footer" href="#">
+                        <svg width="20" height="20">
+                            <use class="footer-icon" href="./images/symbol-defs (1).svg#iconfacebook-svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="soc-ocons-footer" href="#">
+                        <svg width="20" height="20">
+                            <use class="footer-icon" href="./images/symbol-defs (1).svg#iconlinkedin-svg"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-        </address>
+        </div>
     </div>
 </footer>
 </body>
