@@ -49,10 +49,16 @@ img {
     padding-bottom: 32px;
     display: block;
  }
+.nav-list {
+    align-items: center;
+}
  .nav-list .header-link {
     display: block;
     padding-top: 32px;
         padding-bottom: 32px;
+ }
+ .header-container {
+    align-items: center;
  }
 .logo {
     color: var(--accent-text-color);
@@ -65,6 +71,10 @@ img {
     align-items: center;
    
       
+}
+.header-link {
+    display: flex;
+    align-items: center;
 }
 .header-container {
     align-items: center;
@@ -122,15 +132,14 @@ a {
             margin-right: 10px;
             color: currentColor;
         }
-         .header-link:focus,
-         .header-link:hover {
-            color: var(--second-accent-color);
-        
-         }
-         .header-icon:hover,
-         .header-icon:focus {
+         .header-link:focus .header-icon,
+         .header-link:hover .header-icon {
             fill: var(--accent-text-color);
          }
+        .header-link:focus,
+        .header-link:hover {
+            color: var(--accent-text-color);
+        }
     
  .list .link.current {
     color: var(--second-accent-color);
@@ -168,6 +177,7 @@ a {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            max-width: 1600px;
         }
         .title {
             color: var(--primary-text-color);
@@ -194,7 +204,6 @@ a {
         background-color: #2196F3;
             font-weight: 700;
             font-size: 16px;
-            min-width: 216px;
             line-height: 1.88;
             letter-spacing: 0.06em;
             font-family: inherit;
@@ -202,6 +211,7 @@ a {
             border-radius: 4px;
             padding: 10px 32px;
             border: transparent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
      }
      .button:hover,
      button:focus {
@@ -339,24 +349,26 @@ background-color: var(--accent-background-color);
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    gap: 10px;
     }
     .slider-icon-bg {
         fill: #AFB1B8;
-    }
-        .slider-icon-bg:hover,
-        .slider-icon-bg:focus {
-            fill: var(--primary-text-color);
-
-        }
+  }
    .soc-icons-link:hover,
    .soc-icons-link:focus {
-    background-color: #188CE8;
+    background-color: var(--accent-text-color);
 
+   }
+
+   .soc-icons-link:hover .slider-icon-bg,
+   .soc-icons-link:focus .slider-icon-bg {
+    fill: var(--primary-text-color);
    }
 
     .customers {
         background-color: var(--ptimary-backgrond-color);
-        margin-bottom: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
     .customers-title {
         font-weight: 700;
@@ -367,14 +379,23 @@ background-color: var(--accent-background-color);
         color: var(--title-text-color);
         margin-right: auto;
         margin-left: auto;
-        padding-top: 94px;
         margin-bottom: 50px;
-
     }
     .customers-list {
         display: flex;
         gap: 30px;
         align-items: center;
+    }
+    .customers-link {
+        display: flex;
+        width: 170px;
+        height: 92;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        padding: 16px 32px;
+        background-color: var(--ptimary-backgrond-color);
     }
         .customers-container {
             background-color: var(--ptimary-backgrond-color);
@@ -384,15 +405,15 @@ background-color: var(--accent-background-color);
              border-radius: 4px;
         }
 
-        .customers-container:focus,
-        .customers-container:hover {
+        .customers-link:focus,
+        .customers-link:hover {
             border-color: var(--accent-text-color);
         }
-        .customers-icon:hover,
-        .customers-icon:focus {
+        .customers-link:focus  .customers-icon ,
+        .customers-link:hover  .customers-icon {
             fill: var(--accent-text-color);
-
         }
+
         .customers-icon {
             fill: #AFB1B8;
         }
@@ -465,6 +486,10 @@ color: var(--second-text-color);
     text-align: center;
    
 }
+.container .item:hover,
+.container .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .container .secondary-list {
     display: flex;
     flex-wrap: wrap;
@@ -525,7 +550,6 @@ color: var(--second-text-color);
     justify-content: center;
     display: flex;
     background-repeat: no-repeat;
-    content: '';
      background-image: url(../images/ellipse-svg.svg);
 }
 .soc-ocons-footer:hover,
