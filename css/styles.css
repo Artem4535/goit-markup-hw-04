@@ -8,7 +8,8 @@
         --primary-text-color: #FFFFFF;
         --accent-text-color: #2196F3;
         --second-accent-color: #188CE8;
-        --accent-background-color: #188CE8;   
+        --accent-background-color: #188CE8;
+        --thumb-bg: rgba(47, 48, 58, 0.8);
 }
 h1,
 h2,
@@ -294,6 +295,7 @@ background-color: var(--accent-background-color);
      }
      .content {
         padding-bottom: 94px;
+        flex-basis: calc((100% - 60px) /3);
      }
    .content-title {
     color: var(--title-text-color);
@@ -304,6 +306,76 @@ background-color: var(--accent-background-color);
         letter-spacing: 0.03em;
         margin-top: 0;
      margin-bottom: 50px;
+   }
+   .thumb {
+       position: relative;
+   }
+
+   .thumb-text {
+       font-size: 14px;
+       line-height: 1.14px;
+       text-align: center;
+       letter-spacing: 0.03em;
+       background: var(--thumb-bg);
+       color: var(--primary-text-color);
+       bottom: 0;
+       left: 50%;
+       transform: translate(-50%, 0);
+       display: flex;
+       position: absolute;
+        width: 370px;
+        height: 70px;
+       padding: 27px 107px;
+       text-transform: uppercase;
+       align-items: center;
+
+
+   }
+   .thumb-item {
+    position: relative;
+   }
+
+   .mobile-app-text {
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--thumb-bg);
+    color: var(--primary-text-color);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding: 27px 113px;
+    text-transform: uppercase;
+    align-items: center;
+   
+
+
+   }
+   .thumb-designe {
+    position: relative;
+   }
+   .thumb-designe-text {
+    font-size: 14px;
+        line-height: 1.14px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background: var(--thumb-bg);
+        color: var(--primary-text-color);
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        padding: 27px 95px;
+        text-transform: uppercase;
+        align-items: center;
    }
    .slider {
     background-color: var(--section-background-color);
