@@ -88,8 +88,12 @@ img {
 }
 .nav-icon {
     fill: var(--second-text-color);
-    max-width: 100%;
-    max-height: 100%;
+    width: 16px;
+    height: 16px;
+}
+.nav-icon-envelope {
+    width: 16px;
+    height: 12px;
 }
 body {
     background-color: var(--ptimary-backgrond-color);
@@ -140,8 +144,8 @@ a {
             align-items: center;
          }
         .header-icon {
-            margin-right: 10px;
             color: currentColor;
+            background-repeat: no-repeat;
         }
          .header-link:focus .nav-icon,
          .header-link:hover .nav-icon {
@@ -150,6 +154,10 @@ a {
         .header-link:focus,
         .header-link:hover {
             color: var(--accent-text-color);
+        }
+        .header-icon-smartphone {
+            width: 10px;
+            height: 16px;
         }
     
  .list .link.current {
@@ -353,9 +361,9 @@ background-color: var(--accent-background-color);
     position: absolute;
     width: 370px;
     height: 70px;
-    padding: 27px 113px;
     text-transform: uppercase;
     align-items: center;
+    justify-content: center;
    
 
 
@@ -377,9 +385,9 @@ background-color: var(--accent-background-color);
         position: absolute;
         width: 370px;
         height: 70px;
-        padding: 27px 95px;
         text-transform: uppercase;
         align-items: center;
+        justify-content: center;
    }
    .slider {
     background-color: var(--section-background-color);
@@ -441,10 +449,13 @@ background-color: var(--accent-background-color);
     .slider-icon-bg {
         fill: #AFB1B8;
   }
-   .soc-icons-link:hover,
-   .soc-icons-link:focus {
-    background-color: var(--accent-text-color);
-
+   .footer-contacts:hover,
+   .footer-contacts:focus {
+    color: var(--accent-text-color);
+   }
+   .footer-adress:hover,
+   .footer-adress:focus {
+       color: var(--accent-text-color);
    }
 
    .soc-icons-link:hover .slider-icon-bg,
@@ -541,6 +552,11 @@ footer {
 
 .footer-list .item:last-child {
     margin-bottom: 0;
+}
+
+.soc-ocons-footer:focus,
+.soc-ocons-footer:hover {
+    color: var(--accent-text-color);
 }
     
  
@@ -649,6 +665,11 @@ color: var(--second-text-color);
 .footer-icon {
     fill: var(--primary-text-color);
 
+}
+.soc-icons-link:hover,
+.soc-icons-link:focus {
+    fill: var(--primary-text-color);
+    background-color: var(--accent-text-color);
 }
 
     
