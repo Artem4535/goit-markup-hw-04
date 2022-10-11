@@ -672,6 +672,21 @@ color: var(--second-text-color);
     fill: var(--primary-text-color);
     background-color: var(--accent-text-color);
 }
+.link.link.current::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    bottom: -1px;
+    transform: translate(0, -50%);
+    position: absolute;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+}
+.site-nav-list .item {
+    position: relative;
+}
+
 
     
 
